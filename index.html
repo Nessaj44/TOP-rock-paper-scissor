@@ -9,10 +9,29 @@
   <title>TOP rock paper scissors</title>
 </head>
 <body>
-  <div class="flex">
-    <h1>The Odin Project</h1>
-    <br>
-    <h3>Rock Paper Scissor</h3>
+  <div class="flex-center">
+    <button id="rock" onclick="rock()">Rock</button>
+    <button id="paper" onclick="paper()">Paper</button>
+    <button id="scissor" onclick="scissor()">Scissor</button>
+  </div>
+  <div class="flex-center">
+    <button id="startGame" onclick="startGame()">START GAME</button>
+  </div>
+  <div id="container">
+    <h1 id="playerChoice"></h1>
+    <h1 id="result"></h1>
+    <h1 id="computerChoice"></h1>
+  </div>
+  
+  <h2 id="winner"></h2>
+  
+  <h3 id="playerScore">Player score: 0</h3>
+  <h3 id="computerScore">Computer score: 0</h3>
+
+  <h2 id="gameWinner"></h2>
+
+  <div id="again">
+    <button id="playAgain" onclick="playAgain()">PLAY AGAIN</button>
   </div>
 </body>
 </html>
