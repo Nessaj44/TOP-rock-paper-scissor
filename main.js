@@ -55,7 +55,6 @@ function scissor() {
   const scissor = document.getElementById('playerChoice').innerHTML = 'Scissor';
   return scissor;
 }
-
 function getPlayerChoice() {
   const choice = document.getElementById('playerChoice').innerHTML;
   return choice;
@@ -66,7 +65,6 @@ function startGame() {
 }
 
 function playAgain() {
-  if(computerScore === 5 || playerScore === 5) {
     playerScore = 0;
     computerScore = 0;
     document.getElementById('computerScore').innerHTML = computerScore;
@@ -78,5 +76,4 @@ function playAgain() {
     document.getElementById('result').innerHTML = '';
     playAgainShowHide.style.display = 'none';
     startGameShowHide.style.visibility = 'visible'
-  }
 }
